@@ -1,9 +1,49 @@
 body { 
 
     background-color: hsl(30, 54%, 90%);
-    
+  
 }
 
+h1, h2 { 
+    font-family: "Young Serif";
+}
+
+p, h5 { 
+    font-family: "Outfit";
+}
+
+p  {
+    font-size: 16px;
+}
+
+h2 { 
+    color: hsl(14, 45%, 36%);
+}
+
+h5 { 
+    color: hsl(332, 51%, 32%);
+}
+
+@media screen {
+    #mainDiv { 
+        min-width: 375px;
+    }
+    #picture { 
+        min-width: 320px;
+    }
+}
 #mainDiv { 
     background-color: white;
+    padding: 3%;
+    margin-top: 8vh; 
+    margin-bottom: 8vh; 
+}
+
+#preperation-wrapper { 
+    background-color: hsl(330, 100%, 98%);
+    padding: 2%;
+}
+
+#picture { 
+    width: 43vw;
 }

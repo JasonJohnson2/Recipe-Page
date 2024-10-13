@@ -21,6 +21,16 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       .attribution {
@@ -32,15 +42,18 @@
       }
     </style>
   </head>
-  <body class="">
+  <body>
     <div id="outsideDiv">
-      <div id="mainDiv" class="rounded w-50 h-50">
-        <img
-          class="w-75 rounded"
-          src="assets\images\image-omelette.jpeg"
-          alt="Image of an omelete on a plate"
-        />
-        <h1>Simple Omelette Recipe</h1>
+      <div id="mainDiv" class="rounded-3 w-50 h-50 mx-auto">
+        <div class="container d-flex justify-content-center">
+          <img
+            class="rounded-3 pb-3"
+            src="assets\images\image-omelette.jpeg"
+            alt="Image of an omelete on a plate"
+            id="picture"
+          />
+        </div>
+        <h1 class="mt-3">Simple Omelette Recipe</h1>
 
         <p class="overview-paragraph">
           An easy and quick dish, perfect for any meal. This classic omelette
@@ -48,8 +61,8 @@
           choice of cheese, vegetables, or meats.
         </p>
 
-        <div>
-          <h3>Preparation time</h3>
+        <div id="preperation-wrapper" class="mb-4 rounded-3">
+          <h5>Preparation time</h5>
 
           <div class="preperation-list">
             <ul>
@@ -62,7 +75,7 @@
 
         <h2>Ingredients</h2>
 
-        <div class="ingredients-list">
+        <div class="ingredients-list mb-4">
           <ul>
             <li>2-3 large eggs</li>
             <li>Salt, to taste</li>
@@ -77,7 +90,7 @@
         <hr />
         <h2>Instructions</h2>
 
-        <div class="instructions-list">
+        <div class="instructions-list mt-2 mb-4">
           <ol>
             <li>
               <b>Beat the eggs:</b> In a bowl, beat the eggs with a pinch of
@@ -110,19 +123,33 @@
           </ol>
         </div>
         <hr />
-        <h2>Nutrition</h2>
+        <h2 class="mt-2">Nutrition</h2>
         <p>
           The table below shows nutritional values per serving without the
           additional fillings.
         </p>
 
-        Calories <b>277kcal</b>
+        <div class="row justify-content-around">
+          <div class="col-4">Calories</div>
+          <div class="col-4">
+            <b>277kcal</b>
+          </div>
+        </div>
         <hr />
-        Carbs <b>0g</b>
+        <div class="row justify-content-around">
+          <div class="col-4">Carbs</div>
+          <div class="col-4"><b>0g</b></div>
+        </div>
         <hr />
-        Protein <b>20g</b>
+        <div class="row justify-content-around">
+          <div class="col-4">Protein</div>
+          <div class="col-4"><b>20g</b></div>
+        </div>
         <hr />
-        Fat <b>22g</b>
+        <div class="row justify-content-around">
+          <div class="col-4">Fat</div>
+          <div class="col-4"><b>22g</b></div>
+        </div>
       </div>
     </div>
     <div class="attribution">
